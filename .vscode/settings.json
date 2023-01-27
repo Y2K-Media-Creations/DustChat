@@ -1,0 +1,9 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.compile.nullAnalysis.mode": "automatic",
+    "yaml.schemas": {
+        "https://json.schemastore.org/bukkit-plugin.json": "file:///home/miles/Documents/Y2KMedia/aquainventories/src/main/resources/plugin.yml"
+    },
+    "java.dependency.packagePresentation": "hierarchical",
+    "java.dependency.syncWithFolderExplorer": true
+}
