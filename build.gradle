@@ -8,6 +8,7 @@ plugins {
 group = 'sh.miles'
 version = '1.0-SNAPSHOT'
 
+sourceCompatibility = JavaVersion.VERSION_17
 compileJava.options.encoding = "UTF-8"
 compileTestJava.options.encoding = "UTF-8"
 
@@ -42,16 +43,18 @@ publishing {
 
             repositories {
                 maven {
-                    /*credentials {
-                        username = "$myRepoUser" // defined under myRepoUser = STUFF in gradle.properties in gradle home
-                        password = "$myRepoPass" // same as above
-                    }*/
-                    url = 'https://maven.miles.sh/snapshots'
+                    credentials {
+                        username = "$myRepoUser"
+                        password = "$myRepoPass"
+                    }
+                    url = "https://maven.miles.sh/snapshots"
                 }
             }
         }
     }
 }
+
+
 
 test {
     useJUnit()
